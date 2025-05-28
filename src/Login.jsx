@@ -1,16 +1,23 @@
 import React from "react"
 import { useState } from "react"
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useNavigate } from 'react-router-dom';
+
+import './Login.css'
 
 
-function App() {
-  const [usuario, setUsuario] = useState("")
-  const [senha, setSenha] = useState("")
+function Login() {
+  const navigate = useNavigate();
+
+  const [usuario, setUsuario] = useState("admin")
+  const [senha, setSenha] = useState("admin")
 
   const handleLogin = (e) => {
     e.preventDefault()
+
+    if (usuario == "admin" && senha == "admin") {
+      navigate('/home');
+    }
+
     // Handle login logic here
     console.log("Login attempt:", { usuario, senha })
   }
@@ -111,4 +118,4 @@ function App() {
   )
 }
 
-export default App
+export default Login
