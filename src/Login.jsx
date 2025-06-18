@@ -24,8 +24,8 @@ function Login() {
 
   return (
     <>
-      <div className="container">
-      <div className="card shadow-lg" style={{ width: "100%", maxWidth: "400px" }}>
+      <div className="container min-vw-100 d-flex justify-content-center">
+      <div className="card shadow-lg w-50" style={{ width: "100%" }}>
         <div className="card-header text-center bg-white border-0 pb-2">
           <div className="d-flex justify-content-center mb-3">
             <img
