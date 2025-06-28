@@ -1,0 +1,70 @@
+/* Importar ícones do Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* Reutiliza estilos de .dashboard-background, .dashboard-container, .dashboard-card, .dashboard-logo, .dashboard-title de DashboardMenu.css */
+
+.action-card-link {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: inherit; /* Herda a cor do texto */
+}
+
+.action-card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Bordas arredondadas para os cards de ação */
+    min-height: 200px; /* Altura mínima para os cards */
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #e9ecef; /* Borda sutil */
+}
+
+.action-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important; /* Sombra mais intensa no hover */
+    transform: translateY(-5px); /* Efeito de elevação */
+    background-color: #f8f9fa; /* Leve alteração de cor no hover */
+}
+
+.action-card i {
+    color: #6c757d !important; /* Cor dos ícones */
+    font-size: 3.5rem; /* Tamanho maior para os ícones */
+    transition: color 0.2s ease;
+}
+
+.action-card:hover i {
+    color: #007bff !important; /* Mudar para azul no hover */
+}
+
+.action-card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #343a40; /* Cor do texto do título do card */
+    margin-top: 0.5rem;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 767.98px) {
+    .action-card {
+        min-height: 180px;
+        padding: 1.5rem;
+    }
+    .action-card i {
+        font-size: 3rem;
+    }
+    .action-card-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) { /* Extra small devices */
+    .dashboard-card {
+        padding: 1.5rem 0.8rem;
+    }
+    .action-card {
+        min-height: 160px;
+        padding: 1rem;
+    }
+    .action-card i {
+        font-size: 2.5rem;
+    }
+    .action-card-title {
+        font-size: 0.95rem;
+    }
+}

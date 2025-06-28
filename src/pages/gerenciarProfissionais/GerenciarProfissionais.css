@@ -1,0 +1,117 @@
+/* Importar ícones do Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.gerenciar-profissionais-background {
+    background-color: #f0f2f5; /* Fundo suave */
+    min-height: 100vh;
+    padding: 3rem 0; /* Espaçamento superior e inferior */
+}
+
+.gerenciar-profissionais-container {
+    max-width: 1200px; /* Largura máxima para a grade de cards */
+}
+
+.gerenciar-profissionais-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #0056b3; /* Azul forte, consistente com outros títulos */
+    letter-spacing: 1px;
+}
+
+.profissional-card {
+    border-radius: 15px; /* Bordas arredondadas para os cards de profissional */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+}
+
+.profissional-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important; /* Sombra mais intensa no hover */
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+.profissional-icon-container {
+    background-color: #e9ecef; /* Fundo cinza claro para o círculo do ícone */
+    border-radius: 50%; /* Faz um círculo */
+    width: 100px; /* Largura do círculo */
+    height: 100px; /* Altura do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que o ícone não "vaze" */
+}
+
+.gerenciar-icon {
+    font-size: 4rem; /* Tamanho do ícone de pessoa */
+    color: #6c757d; /* Cor do ícone */
+}
+
+.profissional-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #343a40;
+    word-break: break-word; /* Permite quebrar palavras longas */
+}
+
+.edit-button {
+    border-radius: 8px; /* Bordas arredondadas para o botão de editar */
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.2s ease;
+    border-color: #28a745; /* Verde Bootstrap */
+    color: #28a745;
+}
+
+.edit-button:hover {
+    background-color: #28a745;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(40, 167, 69, 0.2);
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 991.98px) { /* md em diante */
+    .gerenciar-profissionais-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767.98px) { /* sm em diante */
+    .gerenciar-profissionais-title {
+        font-size: 1.8rem;
+    }
+    .profissional-icon-container {
+        width: 80px;
+        height: 80px;
+    }
+    .gerenciar-icon {
+        font-size: 3.5rem;
+    }
+    .profissional-name {
+        font-size: 1.1rem;
+    }
+    .edit-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) { /* xs */
+    .gerenciar-profissionais-title {
+        font-size: 1.6rem;
+    }
+    .profissional-icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    .gerenciar-icon {
+        font-size: 3rem;
+    }
+    .profissional-name {
+        font-size: 1rem;
+    }
+    .edit-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}

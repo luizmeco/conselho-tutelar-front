@@ -11,7 +11,7 @@ function Home() {
     <>
     <div className="container">
     <NavBar />
-        <div className="card py-3 mb-3" style={{marginTop: "150px"}}>
+        <div className="card py-3 mb-3 shadow-lg" style={{marginTop: "150px", minWidth: "100%"}}>
           <Outlet />
         </div>
     </div>
