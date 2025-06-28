@@ -29,21 +29,20 @@ function Menu() {
                                 alt="Logo Conselho Tutelar"
                                 className="dashboard-logo mb-3"
                             />
-                            <h1 className="dashboard-title text-primary">CONSELHO TUTELAR</h1>
                         </div>
 
                         {/* Barra de Pesquisa Centralizada */}
                         <Row className="justify-content-center mb-5">
                             <Col md={8} lg={6}>
-                                <InputGroup className="dashboard-search-bar shadow-sm">
+                                <InputGroup className="dashboard-search-bar">
                                     <FormControl
                                         placeholder="O que você procura?"
                                         aria-label="O que você procura?"
                                         value={searchTerm}
                                         onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="search-input-dashboard"
+                                        className="search-input-dashboard shadow-sm"
                                     />
-                                    <Button variant="outline-secondary" className="search-icon-button">
+                                    <Button variant="outline-secondary" className="search-icon-button shadow-sm">
                                         <i className="bi bi-search"></i>
                                     </Button>
                                 </InputGroup>
