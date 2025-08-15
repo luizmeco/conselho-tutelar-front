@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form, Button, Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css'; // Vamos criar este arquivo para estilos personalizados
@@ -17,6 +17,12 @@ function RecebimentoDenuncia() {
     dataAveriguacao: '',
     conselheiroEfetuouAveriguacao: ''
   });
+
+  const [conselheiroQuery, setConselheiroQuery] = useState('');
+
+  useEffect(() => {
+    console.log('conselheiroQuery:', conselheiroQuery);
+}, [conselheiroQuery]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -185,8 +191,8 @@ function RecebimentoDenuncia() {
                 <Form.Control
                   type="text"
                   name="conselheiroRecebeu"
-                  value={formData.conselheiroRecebeu}
-                  onChange={handleChange}
+                  value={conselheiroQuery}
+                  onChange={(e) => setConselheiroQuery(e.target.value)}
                   placeholder="Nome do Conselheiro"
                   required
                 />
