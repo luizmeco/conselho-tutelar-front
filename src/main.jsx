@@ -13,11 +13,11 @@ import ErrorPage from './pages/error/ErrorPage.jsx'
 import Login from './Login.jsx'
 import Home from './pages/home/Home.jsx'
 import Menu from './pages/menu/Menu.jsx'
-import RecebimentoDenuncia from './pages/documentos/recebimento-denuncia/Recebimento-denuncia.jsx'
-import FichaAtendimento from './pages/documentos/ficha-atendimento/FichaAtendimento.jsx';
-import Notificacao from './pages/documentos/notificacao/Notificacao.jsx';
-import TermoMedidasResponsaveis from './pages/documentos/termo-medidas-responsaveis/TermoMedidasResponsaveis.jsx';
-import TermoMedidasCriancaAdolescente from './pages/documentos/termo-medidas-crianca/TermoMedidasCrianca.jsx';
+import RecebimentoDenuncia from './components/documentos/recebimento-denuncia/Recebimento-denuncia.jsx';
+import FichaAtendimento from './components/documentos/ficha-atendimento/FichaAtendimento.jsx';
+import Notificacao from './components/documentos/notificacao/Notificacao.jsx';
+import TermoMedidasResponsaveis from './components/documentos/termo-medidas-responsaveis/TermoMedidasResponsaveis.jsx';
+import TermoMedidasCriancaAdolescente from './components/documentos/termo-medidas-crianca/TermoMedidasCrianca.jsx';
 import PerfilAdministrador from './pages/perfilAdministrador/PerfilAdministrador.jsx';
 import GerenciarProfissionais from './pages/gerenciarProfissionais/GerenciarProfissionais.jsx';
 import CadastrarProfissional from './pages/cadastrarProfissionais/CadastrarProfissional.jsx';
