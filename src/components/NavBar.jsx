@@ -16,6 +16,7 @@ const NavBar = () => {
                     <div className="d-flex">
                         <Link to="/"><button type="button" className="btn btn-primary me-3">Login</button></Link>
                         <Link to="perfil-administrador"><button type="button" className="btn btn-primary me-3"><IoPerson />Perfil</button></Link>
+                        <Link to="mapa"><button type="button" className="btn btn-primary me-3">Mapas</button></Link>
                     </div>
                 </div>
             </nav>

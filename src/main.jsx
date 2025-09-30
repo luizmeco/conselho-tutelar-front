@@ -21,6 +21,7 @@ import TermoMedidasCriancaAdolescente from './pages/documentos/termo-medidas-cri
 import PerfilAdministrador from './pages/perfilAdministrador/PerfilAdministrador.jsx';
 import GerenciarProfissionais from './pages/gerenciarProfissionais/GerenciarProfissionais.jsx';
 import CadastrarProfissional from './pages/cadastrarProfissionais/CadastrarProfissional.jsx';
+import Mapa from './pages/mapas/mapa.jsx';   
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "cadastrar-profissional",
         element: <CadastrarProfissional />,
+      },
+      {
+        path: "mapa",
+        element: <Mapa />,
       },
     ],
   },
