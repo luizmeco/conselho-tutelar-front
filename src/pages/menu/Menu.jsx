@@ -25,7 +25,7 @@ function Menu() {
                         {/* Logo e Título Centralizados */}
                         <div className="text-center mb-5">
                             <img
-                                src="./src/assets/logo.png" // Verifique o caminho correto da sua imagem
+                                src="/logo.png" // Verifique o caminho correto da sua imagem
                                 alt="Logo Conselho Tutelar"
                                 className="dashboard-logo mb-3"
                             />
